@@ -86,10 +86,10 @@ db.AtlasMaps = {
 		WorldMapID = 936,
 		JournalInstanceID = 1001,
 		Module = "Atlas_BattleforAzeroth",
-		{ WHIT.." 1) "..Atlas:GetBossName("Skycap'n Kragg", 2093), 2093},
-		{ WHIT.." 2) "..Atlas:GetBossName("Council o' Captains", 2094), 2094},
-		{ WHIT.." 3) "..Atlas:GetBossName("Ring of Booty", 2095), 2095},
-		{ WHIT.." 4) "..Atlas:GetBossName("Harlan Sweete", 2096), 2096},
+		{ WHIT.." 1) "..Atlas:GetBossName("Skycap'n Kragg", 2102), 2102},
+		{ WHIT.." 2) "..Atlas:GetBossName("Council o' Captains", 2093), 2093},
+		{ WHIT.." 3) "..Atlas:GetBossName("Ring of Booty", 2094), 2094},
+		{ WHIT.." 4) "..Atlas:GetBossName("Harlan Sweete", 2095), 2095},
 	},
 	-- Siege of Boralus
 	SiegeofBoralus = {
@@ -105,7 +105,7 @@ db.AtlasMaps = {
 		Module = "Atlas_BattleforAzeroth",
 		{ BLUE.." A) "..ALC["Entrance"], 10001 },
 		{ WHIT.." 1) "..Atlas:GetBossName("Chopper Redhook", 2132), 2132 },
-		{ WHIT..INDENT..Atlas:GetBossName("Sergeant Bainbridge", 2132, 2)  },
+		{ WHIT..INDENT..Atlas:GetBossName("Sergeant Bainbridge", 2133), 2133  },
 		{ WHIT.." 2) "..Atlas:GetBossName("Dread Captain Lockwood", 2173), 2173 },
 		{ WHIT.." 3) "..Atlas:GetBossName("Hadal Darkfathom", 2134), 2134 },
 		{ WHIT.." 4) "..Atlas:GetBossName("Viq'Goth", 2140), 2140 },
@@ -127,6 +127,8 @@ db.AtlasMaps = {
 		{ BLUE.." B) "..ALC["Connection"], 10002 },
 		{ WHIT.." 1) "..Atlas:GetBossName("Aqu'sirr", 2153), 2153 },
 		{ WHIT.." 2) "..Atlas:GetBossName("Tidesage Council", 2154), 2154 },
+		{ WHIT..INDENT..Atlas:GetBossName("Brother Ironhull", 2154, 1) },
+		{ WHIT..INDENT..Atlas:GetBossName("Galecaller Faye", 2154, 2) },
 		{ WHIT.." 4) "..Atlas:GetBossName("Vol'zith the Whisperer", 2156), 2156 },
 	},
 	ShrineoftheStormB = {
@@ -354,13 +356,30 @@ db.AtlasMaps = {
  };
 /////////////////////////////////////////////]]
 db.AtlasMaps_NPC_DB = {
---[[
-	AntorustheBurningThroneA = {
-		{ "A", 10001, 475, 404 }, -- Entrance
-		{  1, 1992, 404, 370 }, -- Garothi Worldbreaker
-		{  2, 1987, 105, 341 }, -- Felhounds of Sargeras
+	Freehold = {
+		{  1, 2102, 458, 276 },
+		{  2, 2093, 238, 302 },
+		{  3, 2094, 112, 306 },
+		{  4, 2095, 176, 147 },
 	},
-]]
+	SiegeofBoralus = {
+		{ "A", 10001, 364, 80 },
+		{ 1, 2132, 248, 131 },
+		{ 2, 2173, 200, 286 }, 
+		{ 3, 2134, 147, 384 },
+		{ 4, 2140, 202, 465 },
+	},
+	ShrineoftheStormA = {
+		{ "A", 10001, 188, 103 },
+		{ 1, 2153, 154, 228 },
+		{ 2, 2154,  25, 226 },
+		{ "B", 10002, 217, 399 },
+		{ 4, 2156, 442, 399 },
+	},
+	ShrineoftheStormB = {
+		{ "B", 10002, 90, 179 },
+		{ 3, 2155, 371, 339 }, 
+	},
 }
 
 --[[
