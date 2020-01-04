@@ -1,0 +1,11 @@
+$Id$
+Atlas, a World of Warcraft instance map browser
+Copyright 2020 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+
+==============
+= Change Log =
+==============
+
+v1.46.00 (Jan. 05, 2020)
+------------------------
+- Initial version for WoW BfA

@@ -1,0 +1,10 @@
+package-as: Atlas_BattleforAzeroth
+
+manual-changelog:
+    filename: Docs/ChangeLog.txt
+    markup-type: plain
+    
+enable-nolib-creation: no
+
+ignore:
+    - Images/PSD
