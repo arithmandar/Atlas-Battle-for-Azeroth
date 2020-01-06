@@ -59,6 +59,59 @@ db.AtlasMaps = {
 	-- /////////////////////////////////
 	-- Kul Tiras instances
 	-- /////////////////////////////////
+	-- Battle of Dazar'alor, Raid
+	BattleofDazaralor = {
+		ZoneName = { BZ["Battle of Dazar'alor"] },
+		Location = { BZ["Tiragarde Sound"] },
+		DungeonID = 1942,
+		DungeonHeroicID = 1943,
+		DungeonMythicID = 1944,
+		PlayerLimit = { 10, 30 },
+--		Acronym = "",
+		WorldMapID = 1352,
+		JournalInstanceID = 1176,
+		ZoneID = 0,
+		Module = "Atlas_BattleforAzeroth",
+		{ WHIT.." 1) "..Atlas:GetBossName("Champion of the Light", 2333), 2333},
+		{ WHIT..INDENT..Atlas:GetBossName("Frida Ironbellows", 2333, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Anointed Disciple", 2333, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Darkforged Crusader", 2333, 3), },
+		{ WHIT.." 1) "..Atlas:GetBossName("Champion of the Light", 2334), 2334},
+		{ WHIT..INDENT..Atlas:GetBossName("High Tinker Mekkatorque", 2334, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Spark Bot", 2334, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Explosive Sheep", 2334, 3), },
+		{ WHIT.." 2) "..Atlas:GetBossName("Jadefire Masters", 2323), 2323},
+		{ WHIT..INDENT..Atlas:GetBossName("Ma'ra Grimfang", 2323, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Anathos Firecaller", 2323, 2), },
+		{ WHIT.." 2) "..Atlas:GetBossName("Grong, the Jungle Lord", 2325), 2325},
+		{ WHIT..INDENT..Atlas:GetBossName("Grong", 2325, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Flying Ape Wranglers", 2325, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Apetagonizer 3000", 2325, 3), },
+		{ WHIT.." 2) "..Atlas:GetBossName("Grong, the Revenant", 2340), 2340},
+		{ WHIT..INDENT..Atlas:GetBossName("Death Specter", 2340, 2), },
+		{ WHIT.." 3) "..Atlas:GetBossName("Jadefire Masters", 2341), 2341},
+		{ WHIT..INDENT..Atlas:GetBossName("Manceroy Flamefist", 2341, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Mestrah", 2341, 2), },
+		{ WHIT.." 3) "..Atlas:GetBossName("Opulence", 2342), 2342},
+		{ WHIT.." 4) "..Atlas:GetBossName("Conclave of the Chosen", 2330), 2330},
+		{ WHIT..INDENT..Atlas:GetBossName("Pa'ku's Aspect", 2330, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Gonk's Aspect", 2330, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Kimbul's Aspect", 2330, 3), },
+		{ WHIT..INDENT..Atlas:GetBossName("Akunda's Aspect", 2330, 4), },
+		{ WHIT.." 6) "..Atlas:GetBossName("King Rastakhan", 2335), 2335},
+		{ WHIT..INDENT..Atlas:GetBossName("Bwonsamdi", 2335, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Prelate Za'lan", 2335, 3), },
+		{ WHIT..INDENT..Atlas:GetBossName("Headhunter Gal'wana", 2335, 4), },
+		{ WHIT..INDENT..Atlas:GetBossName("Siegebreaker Roka", 2335, 5), },
+		{ WHIT..INDENT..Atlas:GetBossName("Rastari Honorguard", 2335, 6), },
+		{ WHIT.." 7) "..Atlas:GetBossName("High Tinker Mekkatorque", 2334), 2334},
+		{ WHIT..INDENT..Atlas:GetBossName("Spark Bot", 2334, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Explosive Sheep", 2334, 3), },
+		{ WHIT.." 8) "..Atlas:GetBossName("Stormwall Blockade", 2337), 2337},
+		{ WHIT..INDENT..Atlas:GetBossName("Laminaria", 2337, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Sister Katherine", 2337, 2), },
+		{ WHIT.." 9) "..Atlas:GetBossName("Lady Jaina Proudmoore", 2343), 2343},
+	},
 	-- Crucible of Storms, Raid
 	CrucibleofStorms = {
 		ZoneName = { BZ["Crucible of Storms"] },
@@ -96,6 +149,11 @@ db.AtlasMaps = {
 		{ WHIT..INDENT..Atlas:GetBossName("Captain Raoul", 2093, 3), },
 		{ WHIT.." 3) "..Atlas:GetBossName("Ring of Booty", 2094), 2094},
 		{ WHIT.." 4) "..Atlas:GetBossName("Harlan Sweete", 2095), 2095},
+	},
+	-- Operation: Mechagon
+	OperationMechagon = {
+		ZoneName = { BZ["Operation: Mechagon"] },
+		Location = { BZ["Mechagon"] },
 	},
 	-- Shrine of the Storm
 	ShrineoftheStormA = {
@@ -185,7 +243,7 @@ db.AtlasMaps = {
 	-- Waycrest Manor
 	WaycrestManorA = {
 		ZoneName = { BZ["Waycrest Manor"]..ALC["MapA"] },
-		Location = { BZ["Tiragarde Sound"] },
+		Location = { BZ["Drustvar"] },
 		DungeonID = 1705,
 		DungeonHeroicID = 1779,
 		DungeonMythicID = 1706,
@@ -202,7 +260,7 @@ db.AtlasMaps = {
 	},
 	WaycrestManorB = {
 		ZoneName = { BZ["Waycrest Manor"]..ALC["MapB"] },
-		Location = { BZ["Tiragarde Sound"] },
+		Location = { BZ["Drustvar"] },
 		DungeonID = 1705,
 		DungeonHeroicID = 1779,
 		DungeonMythicID = 1706,
@@ -239,32 +297,6 @@ db.AtlasMaps = {
 		{ WHIT.." 4) "..Atlas:GetBossName("Yazma", 2030), 2030 },
 	},
 	-- Kings' Rest
-	-- Battle of Dazar'alor, Raid
-	BattleofDazaralor = {
-		ZoneName = { BZ["Battle of Dazar'alor"] },
-		Location = { BZ["Nazmir"] },
-		DungeonID = 1942,
-		DungeonHeroicID = 1943,
-		DungeonMythicID = 1944,
-		PlayerLimit = { 10, 30 },
---		Acronym = "",
-		WorldMapID = 1352,
-		JournalInstanceID = 1176,
-		ZoneID = 0,
-		Module = "Atlas_BattleforAzeroth",
-		{ WHIT.." 1) "..Atlas:GetBossName("Champion of the Light", 2333), 2333},
-		{ WHIT.." 1) "..Atlas:GetBossName("Champion of the Light", 2334), 2334},
-		{ WHIT.." 2) "..Atlas:GetBossName("Jadefire Masters", 2323), 2323},
-		{ WHIT.." 2) "..Atlas:GetBossName("Grong, the Jungle Lord", 2325), 2325},
-		{ WHIT.." 2) "..Atlas:GetBossName("Grong, the Revenant", 2340), 2340},
-		{ WHIT.." 3) "..Atlas:GetBossName("Jadefire Masters", 2341), 2341},
-		{ WHIT.." 3) "..Atlas:GetBossName("Opulence", 2342), 2342},
-		{ WHIT.." 4) "..Atlas:GetBossName("Conclave of the Chosen", 2330), 2330},
-		{ WHIT.." 6) "..Atlas:GetBossName("King Rastakhan", 2335), 2335},
-		{ WHIT.." 7) "..Atlas:GetBossName("High Tinker Mekkatorque", 2334), 2334},
-		{ WHIT.." 8) "..Atlas:GetBossName("Stormwall Blockade", 2337), 2337},
-		{ WHIT.." 9) "..Atlas:GetBossName("Lady Jaina Proudmoore", 2343), 2343},
-	},
 	KingsRest = {
 		ZoneName = { BZ["Kings' Rest"] },
 		Location = { BZ["Zuldazar"] },
@@ -334,14 +366,31 @@ db.AtlasMaps = {
 		WorldMapID = 1148,
 		JournalInstanceID = 1031,
 		Module = "Atlas_BattleforAzeroth",
-		{ WHIT.." 1) "..Atlas:GetBossName("Taloc", 2144), 2144},
-		{ WHIT.." 2) "..Atlas:GetBossName("MOTHER", 2141), 2141},
-		{ WHIT.." 3) "..Atlas:GetBossName("Fetid Devourer", 2128), 2128},
-		{ WHIT.." 4) "..Atlas:GetBossName("Zek'voz, Herald of N'zoth", 2136), 2136},
-		{ WHIT.." 5) "..Atlas:GetBossName("Vectis", 2134), 2134},
-		{ WHIT.." 6) "..Atlas:GetBossName("Zul, Reborn", 2145), 2145},
-		{ WHIT.." 7) "..Atlas:GetBossName("Mythrax the Unraveler", 2135), 2135},
-		{ WHIT.." 8) "..Atlas:GetBossName("G'huun", 2122), 2122},
+--		{ WHIT..INDENT..Atlas:GetBossName("", 2168, 2), },
+		{ WHIT.." 1) "..Atlas:GetBossName("Taloc", 2168), 2168},
+		{ WHIT..INDENT..Atlas:GetBossName("Volatile Droplet", 2168, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Coalesced Blood", 2168, 3), },
+		{ WHIT.." 2) "..Atlas:GetBossName("MOTHER", 2167), 2167},
+		{ WHIT..INDENT..Atlas:GetBossName("Remnant of Corruption", 2167, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Resistant Bacterium", 2167, 3), },
+		{ WHIT..INDENT..Atlas:GetBossName("Viral Contagion", 2167, 4), },
+		{ WHIT.." 3) "..Atlas:GetBossName("Fetid Devourer", 2146), 2146},
+		{ WHIT..INDENT..Atlas:GetBossName("Corruption Corpuscle", 2146, 2), },
+		{ WHIT.." 3) "..Atlas:GetBossName("Zek'voz, Herald of N'zoth", 2169), 2169},
+		{ WHIT..INDENT..Atlas:GetBossName("Zek'voz", 2169, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Silithid Warrior", 2169, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Nerubian Voidweaver", 2169, 3), },
+		{ WHIT.." 4) "..Atlas:GetBossName("Vectis", 2166), 2166},
+		{ WHIT.." 6) "..Atlas:GetBossName("Zul, Reborn", 2195), 2195},
+		{ WHIT..INDENT..Atlas:GetBossName("Zul", 2195, 1), },
+		{ WHIT..INDENT..Atlas:GetBossName("Nazmani Crusher", 2195, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Nazmani Bloodhexer", 2195, 3), },
+		{ WHIT..INDENT..Atlas:GetBossName("Bloodthirsty Crawg", 2195, 4), },
+		{ WHIT.." 8) "..Atlas:GetBossName("Mythrax the Unraveler", 2194), 2194},
+		{ WHIT.." 11) "..Atlas:GetBossName("G'huun", 2147), 2147},
+		{ WHIT..INDENT..Atlas:GetBossName("Blightspreader Tendril", 2147, 2), },
+		{ WHIT..INDENT..Atlas:GetBossName("Cyclopean Terror", 2147, 3), },
+		{ WHIT..INDENT..Atlas:GetBossName("Dark Young", 2147, 4), },
 	},
 	-- The Underrot
 	TheUnderrot = {
@@ -359,6 +408,12 @@ db.AtlasMaps = {
 		{ WHIT.." 2) "..Atlas:GetBossName("Cragmaw the Infested", 2131), 2131},
 		{ WHIT.." 3) "..Atlas:GetBossName("Sporecaller Zancha", 2130), 2130},
 		{ WHIT.." 4) "..Atlas:GetBossName("Unbound Abomination", 2158), 2158},
+	},
+
+	-- The Eternal Palace
+	TheEternalPalace = {
+		ZoneName = { BZ["The Eternal Palace"] },
+		Location = { BZ["Nazjatar"] },
 	},
 }
 
@@ -569,6 +624,7 @@ db.DropDownLayouts = {
 	[ATLAS_DDL_CONTINENT] = {
 		[ATLAS_DDL_CONTINENT_KULTIRAS] = {
 --			"CrucibleofStorms", -- Raid
+--			"BattleofDazaralor", -- Raid
 			"Freehold",
 			"SiegeofBoralus",
 			"ShrineoftheStormA",
@@ -580,7 +636,6 @@ db.DropDownLayouts = {
 		},
 		[ATLAS_DDL_CONTINENT_ZANDALAR] = {
 			"AtalDazar",
---			"BattleofDazaralor", -- Raid
 			"KingsRest",
 			"TheMOTHERLODE",
 			"TempleofSethraliss",
