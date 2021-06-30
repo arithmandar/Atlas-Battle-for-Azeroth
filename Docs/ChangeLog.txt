@@ -6,6 +6,10 @@ Copyright 2020 ~ 2021 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 = Change Log =
 ==============
 
+v1.49.01 (Jun. 30, 2021)
+------------------------
+- ToC update to support WoW 9.1.0
+
 v1.49.00 (May 20, 2021)
 ------------------------
 - ToC update to support WoW 9.0.5
