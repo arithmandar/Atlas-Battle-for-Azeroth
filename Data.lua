@@ -233,7 +233,7 @@ db.AtlasMaps = {
 		{ WHIT..INDENT..Atlas_GetBossName("Rastari Honorguard", 2335, 6), },
 	},
 	BattleofDazaralorF = {
-		ZoneName = { BZ["Battle of Dazar'alor"] },
+		ZoneName = { BZ["Battle of Dazar'alor"]..ALC["MapF"] },
 		Location = { BZ["Tiragarde Sound"] },
 		DungeonID = 1942,
 		DungeonHeroicID = 1943,
@@ -251,21 +251,39 @@ db.AtlasMaps = {
 		{ WHIT.." 7) "..Atlas_GetBossName("Lady Jaina Proudmoore", 2343), 2343},
 	},
 	-- Crucible of Storms, Raid
-	CrucibleofStorms = {
-		ZoneName = { BZ["Crucible of Storms"] },
+	CrucibleofStormsA = {
+		ZoneName = { BZ["Crucible of Storms"]..ALC["MapA"] },
 		Location = { BZ["Stormsong Valley"] },
 		DungeonID = 1952,
 		DungeonHeroicID = 1953,
 		DungeonMythicID = 1954,
 		PlayerLimit = { 10, 30 },
 --		Acronym = "",
-		WorldMapID = 1345, -- 1346
+		WorldMapID = 1345,
 		JournalInstanceID = 1177,
 		ZoneID = 10057,
 		Module = "Atlas_BattleforAzeroth",
+		NextMap = "CrucibleofStormsB",
+		{ BLUE.." A) "..ALC["Entrance"], 10001 },
+		{ BLUE.." B) "..ALC["Connection"], 10002 },
 		{ WHIT.." 1) "..Atlas_GetBossName("The Restless Cabal", 2328), 2328},
 		{ WHIT..INDENT..Atlas_GetBossName("Zaxasj the Speaker", 2328, 1) },
 		{ WHIT..INDENT..Atlas_GetBossName("Fa'thuul the Feared", 2328, 2) },
+	},
+	CrucibleofStormsB = {
+		ZoneName = { BZ["Crucible of Storms"]..ALC["MapB"] },
+		Location = { BZ["Stormsong Valley"] },
+		DungeonID = 1952,
+		DungeonHeroicID = 1953,
+		DungeonMythicID = 1954,
+		PlayerLimit = { 10, 30 },
+--		Acronym = "",
+		WorldMapID = 1346,
+		JournalInstanceID = 1177,
+		ZoneID = 10057,
+		Module = "Atlas_BattleforAzeroth",
+		PrevMap = "CrucibleofStormsA",
+		{ BLUE.." B) "..ALC["Connection"], 10002 },
 		{ WHIT.." 2) "..Atlas_GetBossName("Uu'nat, Harbinger of the Void", 2332), 2332},
 	},
 	-- Freehold
@@ -564,6 +582,15 @@ db.AtlasMaps = {
  };
 /////////////////////////////////////////////]]
 db.AtlasMaps_NPC_DB = {
+	CrucibleofStormsA = {
+		{ "A", 10001, 312, 451 },
+		{ "B", 10002, 245, 273 },
+		{ 1, 2328, 227, 302 },
+	},
+	CrucibleofStormsB = {
+		{ "B", 10002, 452, 191 },
+		{ 2, 2332, 94, 265 },
+	},
 	BattleofDazaralorA = {
 		{ "A", 10001, 58, 53 },
 		{ "B", 10002, 293, 393 },
@@ -759,6 +786,8 @@ db.InstToEntMatches = {
 }
 
 db.MapSeries = {
+	["CrucibleofStormsA"] = 	{"CrucibleofStormsA", "CrucibleofStormsB"},
+	["CrucibleofStormsB"] = 	{"CrucibleofStormsA", "CrucibleofStormsB"},
 	["BattleofDazaralorA"] = 	{"BattleofDazaralorA", "BattleofDazaralorB", "BattleofDazaralorC", "BattleofDazaralorD", "BattleofDazaralorE", "BattleofDazaralorF"},
 	["BattleofDazaralorB"] = 	{"BattleofDazaralorA", "BattleofDazaralorB", "BattleofDazaralorC", "BattleofDazaralorD", "BattleofDazaralorE", "BattleofDazaralorF"},
 	["BattleofDazaralorC"] = 	{"BattleofDazaralorA", "BattleofDazaralorB", "BattleofDazaralorC", "BattleofDazaralorD", "BattleofDazaralorE", "BattleofDazaralorF"},
@@ -802,7 +831,8 @@ db.DropDownLayouts_Order = {
 db.DropDownLayouts = {
 	[ATLAS_DDL_CONTINENT] = {
 		[ATLAS_DDL_CONTINENT_KULTIRAS] = {
---			"CrucibleofStorms", -- Raid
+			"CrucibleofStormsA",
+			"CrucibleofStormsB",
 			"BattleofDazaralorA",
 			"BattleofDazaralorB",
 			"BattleofDazaralorC",
@@ -837,7 +867,8 @@ db.DropDownLayouts = {
 			"BattleofDazaralorD",
 			"BattleofDazaralorE",
 			"BattleofDazaralorF",
---			"CrucibleofStorms",
+			"CrucibleofStormsA",
+			"CrucibleofStormsB",
 			"Freehold",
 			"ShrineoftheStormA",
 			"ShrineoftheStormB",
@@ -874,7 +905,8 @@ db.DropDownLayouts = {
 			"BattleofDazaralorD",
 			"BattleofDazaralorE",
 			"BattleofDazaralorF",
---			"CrucibleofStorms",
+			"CrucibleofStormsA",
+			"CrucibleofStormsB",
 			"KingsRest",
 --			"Uldir",
 		},
@@ -902,7 +934,8 @@ db.DropDownLayouts = {
 			"BattleofDazaralorD",
 			"BattleofDazaralorE",
 			"BattleofDazaralorF",
---			"CrucibleofStorms",
+			"CrucibleofStormsA",
+			"CrucibleofStormsB",
 --			"Uldir",
 		},
 		[ATLAS_DDL_PARTYSIZE_20TO40] = {
@@ -918,7 +951,8 @@ db.DropDownLayouts = {
 			"BattleofDazaralorD",
 			"BattleofDazaralorE",
 			"BattleofDazaralorF",
---			"CrucibleofStorms",
+			"CrucibleofStormsA",
+			"CrucibleofStormsB",
 			"Freehold",
 			"ShrineoftheStormA",
 			"ShrineoftheStormB",
