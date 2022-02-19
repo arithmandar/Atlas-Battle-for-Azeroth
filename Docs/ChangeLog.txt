@@ -6,6 +6,10 @@ Copyright 2020 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 = Change Log =
 ==============
 
+v1.49.05 (Feb. 19, 2022)
+------------------------
+- Added maps of Uldir
+
 v1.49.04 (Feb. 19, 2022)
 ------------------------
 - Added maps of Crucible of Storms

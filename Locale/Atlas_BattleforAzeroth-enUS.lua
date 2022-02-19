@@ -26,6 +26,8 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("Atlas_BattleforAzeroth", "enUS", true, true);
 
 if L then
+L["ATLAS_DDL_EXPANSION_BFA"] = "Battle for Azeroth Instances"
+L["ATLAS_DDL_EXPANSION_BFA2"] = "Battle for Azeroth Raids"
 
 
 end
