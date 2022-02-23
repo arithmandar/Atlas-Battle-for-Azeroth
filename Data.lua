@@ -92,7 +92,7 @@ db.AtlasMaps = {
 		JournalInstanceID = 1176,
 		ZoneID = 0,
 		Module = "Atlas_BattleforAzeroth",
-		NextMap = "BattleofDazaralorA",
+		NextMap = "BattleofDazaralorB",
 		{ BLUE.." A) "..ALC["Entrance"]..ALC["L-Parenthesis"]..FACTION_HORDE..ALC["R-Parenthesis"], 10001 },
 		{ BLUE.." B-G) "..ALC["Connection"], 10002 },
 		{ WHIT.." 1) "..Atlas_GetBossName("Champion of the Light", 2333), 2333},
@@ -659,6 +659,7 @@ db.AtlasMaps = {
 	-- Ny'alotha
 	Nyalotha = {
 		ZoneName = { BZ["Ny'alotha, the Waking City"] },
+		Location = { BZ["Uldum"]..L["Slash"]..BZ["Vale of Eternal Blossoms"] },
 		DungeonID = 2033,
 		DungeonHeroicID = 2034,
 		DungeonMythicID = 2035,
@@ -884,7 +885,12 @@ db.AtlasMaps_NPC_DB = {
 	The table value is map's key-name.
 ]]
 db.AssocDefaults = {
---	[BZ["Black Rook Hold"]] = 		"BlackRookHoldA",
+	[BZ["Battle of Dazar'alor"]] = 		"BattleofDazaralorA",
+	[BZ["Crucible of Storms"]] = 		"CrucibleofStormsA",
+	[BZ["Shrine of the Storm"]] = 		"ShrineoftheStormA",
+	[BZ["Tol Dagor"]] = 				"TolDagorA",
+	[BZ["Waycrest Manor"]] = 			"WaycrestManorA",
+	[BZ["Uldir"]] = 					"UldirA",
 }
 
 --[[
@@ -902,14 +908,29 @@ db.AssocDefaults = {
 	},
 ]]
 db.SubZoneData = {
---	[BZ["Trial of Valor"]] = {
---		["TrialofValorA"] = {
---		
---		},
---		["TrialofValorB"] = {
---		
---		},
---	},
+	[BZ["Battle of Dazar'alor"]] = {
+		["BattleofDazaralorA"] = {
+			BZ["The Zocalo"],
+			BZ["Dazar'alor"],
+			BZ["Terrace of the Speakers"],
+			BZ["Grand Bazaar"],
+			BZ["Bay of Kings"],
+			BZ["Path of the Ancestors"],
+		},
+		["BattleofDazaralorB"] = {
+			BZ["Port of Zandalar"],
+		},
+		["BattleofDazaralorC"] = {
+			BZ["Halls of Opulence"],
+		},
+		["BattleofDazaralorD"] = {
+			BZ["Loa's Sanctum"],
+			BZ["Walk of Kings"],
+		},
+		["BattleofDazaralorE"] = {
+			BZ["The Heart of the Empire"],
+		},
+	},
 }
 
 --[[
@@ -925,7 +946,16 @@ db.SubZoneData = {
 	Not for localization.
 ]]
 db.OutdoorZoneToAtlas = {
---	[BZ["Dalaran"]] = 			"AssaultonVioletHold",
+	[BZ["Tiragarde Sound"]] = 		"Freehold",
+	[BZ["Tol Dagor"]] = 			"TolDagorA",
+	[BZ["Stormsong Valley"]] = 		"ShrineoftheStormA",
+--	[BZ["Mechagon"]] = 				"OperationMechagon",
+	[BZ["Drustvar"]] = 				"WaycrestManorA",
+	[BZ["Zuldazar"]] = 				"AtalDazar",
+	[BZ["Vol'dun"]] = 				"TempleofSethraliss",
+	[BZ["Nazmir"]] = 				"TheUnderrot",
+--	[BZ["Nazjatar"]] = 				"TheEternalPalace",
+	[BZ["Boralus Harbor"]] = 		"SiegeofBoralus",
 }
 
 db.EntToInstMatches = {
@@ -968,6 +998,8 @@ db.DropDownLayouts_Order = {
 	[ATLAS_DDL_CONTINENT] = {
 		ATLAS_DDL_CONTINENT_KULTIRAS,
 		ATLAS_DDL_CONTINENT_ZANDALAR,
+		ATLAS_DDL_CONTINENT_PANDARIA,
+		ATLAS_DDL_CONTINENT_KALIMDOR,
 	},
 	[ATLAS_DDL_LEVEL] = {
 		ATLAS_DDL_LEVEL_45TO50,
@@ -1021,6 +1053,12 @@ db.DropDownLayouts = {
 			"UldirF",
 			"UldirG",
 			"TheUnderrot",
+		},
+		[ATLAS_DDL_CONTINENT_PANDARIA] = {
+--			"Nyalotha",
+		},
+		[ATLAS_DDL_CONTINENT_KALIMDOR] = {
+--			"Nyalotha",
 		},
 	},
 	[ATLAS_DDL_EXPANSION] = {
