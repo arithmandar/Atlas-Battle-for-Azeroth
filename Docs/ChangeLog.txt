@@ -6,6 +6,13 @@ Copyright 2020 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 = Change Log =
 ==============
 
+v1.50.03 (Feb. 27, 2022)
+------------------------
+- Added Ny'alotha raid maps
+- Added Mechagon map (partial)
+- Updated Waycrest Manor map's connection info
+- Updated instance's normal / heroic / mythic info 
+
 v1.50.02 (Feb. 26, 2022)
 ------------------------
 - Added more encounters
