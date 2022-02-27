@@ -267,6 +267,7 @@ db.AtlasMaps = {
 		WorldMapID = 1490,
 		JournalInstanceID = 1178,
 		Module = "Atlas_BattleforAzeroth",
+--		NextMap = "OperationMechagonB",
 		{ WHIT.." 1) "..Atlas_GetBossName("King Gobbamak", 2357), 2357}, 	-- MapID: 1490
 		{ WHIT..INDENT..Atlas_GetBossName("Scrapbone Scavenger", 2357, 2), 2357},
 		{ WHIT..INDENT..Atlas_GetBossName("Stolen Scrap Bot", 2357, 3), 2357},
@@ -286,6 +287,7 @@ db.AtlasMaps = {
 		WorldMapID = 1490,
 		JournalInstanceID = 1178,
 		Module = "Atlas_BattleforAzeroth",
+		PrevMap = "OperationMechagonA",
 		{ WHIT.." 5) "..Atlas_GetBossName("Tussle Tonks", 2336), 2336}, 	-- MapID: 1491
 		{ WHIT..INDENT..Atlas_GetBossName("The Platinum Pummeler", 2336, 1), 2336},
 		{ WHIT..INDENT..Atlas_GetBossName("Gnomercy 4.U.", 2336, 2), 2336},
