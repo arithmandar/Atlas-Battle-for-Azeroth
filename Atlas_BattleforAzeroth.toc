@@ -1,43 +1,24 @@
-## Interface: 100105
-#@non-debug@
-## Title: @localization(locale="enUS", key="Title", namespace="ToC")@
-## Title-deDE: @localization(locale="deDE", key="Title", namespace="ToC")@
-## Title-esES: @localization(locale="esES", key="Title", namespace="ToC")@
-## Title-esMX: @localization(locale="esMX", key="Title", namespace="ToC")@
-## Title-frFR: @localization(locale="frFR", key="Title", namespace="ToC")@
-## Title-itIT: @localization(locale="itIT", key="Title", namespace="ToC")@
-## Title-koKR: @localization(locale="koKR", key="Title", namespace="ToC")@
-## Title-ptBR: @localization(locale="ptBR", key="Title", namespace="ToC")@
-## Title-ruRU: @localization(locale="ruRU", key="Title", namespace="ToC")@
-## Title-zhCN: @localization(locale="zhCN", key="Title", namespace="ToC")@
-## Title-zhTW: @localization(locale="zhTW", key="Title", namespace="ToC")@
-## Notes: @localization(locale="enUS", key="Description", namespace="ToC")@
-## Notes-deDE: @localization(locale="deDE", key="Description", namespace="ToC")@
-## Notes-esES: @localization(locale="esES", key="Description", namespace="ToC")@
-## Notes-esMX: @localization(locale="esMX", key="Description", namespace="ToC")@
-## Notes-frFR: @localization(locale="frFR", key="Description", namespace="ToC")@
-## Notes-itIT: @localization(locale="itIT", key="Description", namespace="ToC")@
-## Notes-koKR: @localization(locale="koKR", key="Description", namespace="ToC")@
-## Notes-ptBR: @localization(locale="ptBR", key="Description", namespace="ToC")@
-## Notes-ruRU: @localization(locale="ruRU", key="Description", namespace="ToC")@
-## Notes-zhCN: @localization(locale="zhCN", key="Description", namespace="ToC")@
-## Notes-zhTW: @localization(locale="zhTW", key="Description", namespace="ToC")@
-#@end-non-debug@
-#@debug@
+## Interface: 120100
 ## Title: Atlas |r|cFF0099FF[Battle for Azeroth]|r
+## Title-deDE: Atlas |r|cFF0099FF[Battle for Azeroth]|r
+## Title-koKR: Atlas |r|cFF0099FF[격전의 아제로스]|r
+## Title-ruRU: Атлас |r|cFF0099FF[Battle for Azeroth]|r
+## Title-zhCN: Atlas |r|cFF0099FF[争霸艾泽拉斯]|r
 ## Title-zhTW: |r|cFF0099FF[地圖]|rAtlas 決戰艾澤拉斯
 ## Notes: Battle for Azeroth Instances' Maps
+## Notes-deDE: Karten der Instanzen aus Battle for Azeroth
+## Notes-koKR: 격전의 아제로스 인스턴스 던전 지도
+## Notes-ruRU: Карты подземелий Battle for Azeroth
+## Notes-zhCN: 争霸艾泽拉斯副本地图
 ## Notes-zhTW: 決戰艾澤拉斯副本地圖模組
-#@end-debug@
 ## Version: @project-version@
 ## Author: arith
 ## X-Date: @project-date-iso@
 ## X-Email: atlas.addon at gmail dot com
-## X-Website: http://www.atlasmod.com
 ## X-Category: Map
 ## RequiredDeps: Atlas
 ## IconTexture: Interface\WorldMap\WorldMap-Icon
 
 Locale\Locales.xml
-Core.lua
-Data.lua
+Core\Core.lua
+Core\Data.lua

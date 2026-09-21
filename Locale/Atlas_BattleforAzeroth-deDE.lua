@@ -2,7 +2,7 @@
 --[[
 
 	Atlas, a World of Warcraft instance map browser
-	Copyright 2020 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+	Copyright 2020 ~ 2026 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 
 	This file is part of Atlas.
 
@@ -26,8 +26,7 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("Atlas_BattleforAzeroth", "deDE", false);
 
 if L then
---@localization(locale="deDE", format="lua_additive_table")@
---@do-not-package@
+L["ATLAS_DDL_EXPANSION_BFA"] = "Battle for Azeroth Instanzen"
+L["ATLAS_DDL_EXPANSION_BFA2"] = "Battle for Azeroth Schlachtzüge"
 
---@end-do-not-package@
 end

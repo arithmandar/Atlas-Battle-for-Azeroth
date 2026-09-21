@@ -2,7 +2,7 @@
 --[[
 
 	Atlas, a World of Warcraft instance map browser
-	Copyright 2020 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+	Copyright 2020 ~ 2026 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 
 	This file is part of Atlas.
 
@@ -26,8 +26,9 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("Atlas_BattleforAzeroth", "frFR", false);
 
 if L then
---@do-not-package@
+--[[Translation missing --]]
+--[[ L["ATLAS_DDL_EXPANSION_BFA"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ATLAS_DDL_EXPANSION_BFA2"] = ""--]] 
 
---@end-do-not-package@
---@localization(locale="frFR", format="lua_additive_table")@
 end
