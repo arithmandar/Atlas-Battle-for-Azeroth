@@ -1,23 +1,46 @@
 ## Interface: 120100
-## Title: Atlas |r|cFF0099FF[Battle for Azeroth]|r
-## Title-deDE: Atlas |r|cFF0099FF[Battle for Azeroth]|r
-## Title-koKR: Atlas |r|cFF0099FF[격전의 아제로스]|r
-## Title-ruRU: Атлас |r|cFF0099FF[Battle for Azeroth]|r
-## Title-zhCN: Atlas |r|cFF0099FF[争霸艾泽拉斯]|r
-## Title-zhTW: |r|cFF0099FF[地圖]|rAtlas 決戰艾澤拉斯
-## Notes: Battle for Azeroth Instances' Maps
-## Notes-deDE: Karten der Instanzen aus Battle for Azeroth
-## Notes-koKR: 격전의 아제로스 인스턴스 던전 지도
-## Notes-ruRU: Карты подземелий Battle for Azeroth
-## Notes-zhCN: 争霸艾泽拉斯副本地图
-## Notes-zhTW: 決戰艾澤拉斯副本地圖模組
+## Title: Atlas Battle for Azeroth
+## Notes: Battle for Azeroth instance maps for Atlas
+## Title-deDE: Atlas Schlacht um Azeroth
+## Notes-deDE: Instanzkarten für Schlacht um Azeroth für Atlas
+## Title-esES: Atlas Battle for Azeroth
+## Notes-esES: Mapas de instancias de Battle for Azeroth para Atlas
+## Title-esMX: Atlas Battle for Azeroth
+## Notes-esMX: Mapas de instancias de Battle for Azeroth para Atlas
+## Title-frFR: Atlas Battle for Azeroth
+## Notes-frFR: Cartes des instances de Battle for Azeroth pour Atlas
+## Title-itIT: Atlas Battle for Azeroth
+## Notes-itIT: Mappe delle istanze di Battle for Azeroth per Atlas
+## Title-koKR: Atlas 격전의 아제로스
+## Notes-koKR: Atlas용 격전의 아제로스 인스턴스 지도
+## Title-ptBR: Atlas Battle for Azeroth
+## Notes-ptBR: Mapas de instâncias de Battle for Azeroth para Atlas
+## Title-ruRU: Atlas Битва за Азерот
+## Notes-ruRU: Карты подземелий и рейдов Battle for Azeroth для Atlas
+## Title-zhCN: Atlas 争霸艾泽拉斯
+## Notes-zhCN: Atlas 的争霸艾泽拉斯副本地图
+## Title-zhTW: Atlas 決戰艾澤拉斯
+## Notes-zhTW: Atlas 的決戰艾澤拉斯副本地圖
 ## Version: @project-version@
 ## Author: arith
-## X-Date: @project-date-iso@
-## X-Email: atlas.addon at gmail dot com
-## X-Category: Map
-## RequiredDeps: Atlas
 ## IconTexture: Interface\WorldMap\WorldMap-Icon
+## RequiredDeps: Atlas
+## Category: Map
+## Category-deDE: Karte
+## Category-esES: Mapa
+## Category-esMX: Mapa
+## Category-frFR: Carte
+## Category-itIT: Mappa
+## Category-koKR: 지도
+## Category-ptBR: Mapa
+## Category-ruRU: Карта
+## Category-zhCN: 地图
+## Category-zhTW: 地圖
+## X-Category: Map
+## X-Date: @project-date-iso@
+## X-Website: https://www.curseforge.com/wow/addons/atlas-battle-for-azeroth
+## X-Curse-Project-ID: 357237
+## X-WoWI-ID: 26107
 
 Locale\Locales.xml
 Core\Core.lua

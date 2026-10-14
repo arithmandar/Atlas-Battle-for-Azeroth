@@ -1,8 +1,7 @@
-﻿-- $Id$
---[[
+﻿--[[
 
 	Atlas, a World of Warcraft instance map browser
-	Copyright 2020 ~ 2026 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+	Copyright 2020 ~ 2026 - Arith Hsu, Atlas Team 
 
 	This file is part of Atlas.
 
