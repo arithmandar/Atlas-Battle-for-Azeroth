@@ -1,10 +1,15 @@
-$Id$
 Atlas, a World of Warcraft instance map browser
-Copyright 2020 ~ 2026 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+Copyright 2020 ~ 2026 - Arith Hsu, Atlas Team
 
 ==============
 = Change Log =
 ==============
+
+v1.53.01 (Oct. 14, 2026)
+------------------------
+- Added Operation Mechagon map A's coordinates
+- Fixed boss IDs for Temple of Sethraliss
+- Deal with the Battle of Dazar'alor that alliance and horde will have different encounters in different maps
 
 v1.53.00 (Sep. 21, 2026)
 ------------------------
