@@ -7,16 +7,14 @@ body:
       value: |
         Thank you for helping improve Atlas!
 
-        Use this form to report a problem with the map module or plugin
-        maintained in this repository, including incorrect map information,
-        display problems, or Lua errors.
+        Use this form to report a problem with the map module or plugin maintained in this repository, 
+        including incorrect map information, display problems, or Lua errors.
 
         Please search existing issues before submitting.
-        If you are unsure which component is responsible, describe what
-        you observed. You do not need to diagnose the cause yourself.
+        If you are unsure which component is responsible, describe what you observed.
+        You do not need to diagnose the cause yourself.
 
-        For general installation or usage questions, please use the
-        Atlas community Discussions linked in the issue chooser.
+        For general installation or usage questions, please use the Atlas community Discussions linked in the issue chooser.
 
   - type: dropdown
     id: game-flavor
