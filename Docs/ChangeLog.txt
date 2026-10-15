@@ -5,6 +5,10 @@ Copyright 2020 ~ 2026 - Arith Hsu, Atlas Team
 = Change Log =
 ==============
 
+v1.54.00 (Oct. 15, 2026)
+------------------------
+- ToC Update to support WoW 12.1.5
+
 v1.53.01 (Oct. 14, 2026)
 ------------------------
 - Added Operation Mechagon map A's coordinates
