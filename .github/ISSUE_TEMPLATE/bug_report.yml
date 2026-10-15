@@ -1,0 +1,134 @@
+name: Bug report
+description: Report a problem with the Atlas map module or plugin in this repository.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Atlas!
+
+        Use this form to report a problem with the map module or plugin
+        maintained in this repository, including incorrect map information,
+        display problems, or Lua errors.
+
+        Please search existing issues before submitting.
+        If you are unsure which component is responsible, describe what
+        you observed. You do not need to diagnose the cause yourself.
+
+        For general installation or usage questions, please use the
+        Atlas community Discussions linked in the issue chooser.
+
+  - type: dropdown
+    id: game-flavor
+    attributes:
+      label: WoW game flavor
+      description: Which version of World of Warcraft are you using?
+      options:
+        - Retail (Mainline)
+        - Classic Era
+        - Classic progression
+        - Classic Anniverssary (TBC)
+        - Forever
+        - Other — specify in the game version field
+    validations:
+      required: true
+
+  - type: input
+    id: game-version
+    attributes:
+      label: WoW version and build
+      description: |
+        Enter the game version and build, if available.
+        For Classic or other variants, also specify the release or mode.
+      placeholder: "Game version, build, and release or mode"
+    validations:
+      required: true
+
+  - type: input
+    id: component-version
+    attributes:
+      label: Map module or plugin version
+      description: |
+        Enter the version of the module or plugin maintained in this repository.
+        If testing a Git checkout, include the commit ID.
+      placeholder: "Module or plugin version, or commit ID"
+    validations:
+      required: true
+
+  - type: input
+    id: atlas-version
+    attributes:
+      label: Atlas core version
+      description: Enter the version of the Atlas core addon.
+      placeholder: "Atlas core version"
+    validations:
+      required: true
+
+  - type: input
+    id: affected-content
+    attributes:
+      label: Affected map or feature
+      description: |
+        Name the affected map, zone, encounter, or plugin feature.
+        If the problem affects the whole module or plugin, enter "All".
+      placeholder: "Map, zone, encounter, or feature name"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: What happened?
+      description: Describe the problem you observed.
+      placeholder: |
+        Explain what is incorrect, missing, or not working.
+        For map content errors, identify the affected label or marker.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What did you expect to happen?
+      description: |
+        Describe the correct behavior or information.
+        If suggesting a map correction, include a reference if available.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: |
+        Explain how to reach the affected map or feature and observe the problem.
+        If the problem is intermittent, describe when it occurs.
+      placeholder: |
+        1. Open Atlas.
+        2. Select...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: input
+    id: client-language
+    attributes:
+      label: WoW client language
+      description: Especially helpful for text, font, or translation problems.
+      placeholder: "For example: enUS, zhTW, deDE"
+
+  - type: textarea
+    id: lua-errors
+    attributes:
+      label: Lua errors
+      description: Paste the full Lua error, if one appears.
+      render: text
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Screenshots and additional context
+      description: |
+        Add screenshots, references, or other information that may help.
+        If you tested with unrelated addons disabled, include the result.
+        For compatibility problems, list the relevant addons and versions.

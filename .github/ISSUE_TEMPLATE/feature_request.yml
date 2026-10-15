@@ -1,0 +1,87 @@
+name: Feature or improvement request
+description: Suggest a feature, map update, or improvement for this module or plugin.
+title: "[Suggestion]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your ideas!
+
+        Use this form for suggestions specifically related to the map module
+        or plugin maintained in this repository.
+
+        Please search existing issues before submitting.
+        For broader Atlas ideas or open-ended conversations, please use
+        the Atlas community Discussions.
+
+        If existing map information or functionality is incorrect,
+        please use the Bug report form instead.
+
+  - type: dropdown
+    id: suggestion-type
+    attributes:
+      label: Type of suggestion
+      options:
+        - New map or additional map coverage
+        - Additional map information or annotations
+        - Plugin functionality
+        - Usability or accessibility
+        - Localization or documentation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: affected-content
+    attributes:
+      label: Related map or feature
+      description: |
+        Name the map, zone, encounter, or feature involved.
+        If the suggestion applies to the whole module or plugin, enter "General".
+      placeholder: "Map, zone, encounter, or feature name"
+    validations:
+      required: true
+
+  - type: textarea
+    id: need
+    attributes:
+      label: What would this improve?
+      description: |
+        Describe the need, limitation, or use case behind your suggestion.
+        Explain who would benefit and how.
+      placeholder: "When using this module or plugin, I would like to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested improvement
+      description: |
+        Describe what you would like to see added or changed.
+        You do not need to provide a technical implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: game-context
+    attributes:
+      label: Relevant WoW version or game flavor
+      description: |
+        If relevant, specify Retail, Classic Era, a Classic progression
+        release, or another game variant.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: |
+        Describe any workarounds or other approaches you have considered.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: References and additional context
+      description: |
+        Add screenshots, mockups, reference links, or examples that
+        help explain the suggestion.
